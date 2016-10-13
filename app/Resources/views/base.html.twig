@@ -23,7 +23,9 @@
             </button>
           </a>
       {% else %}
-          <a href="{{ path('fos_user_security_login') }}"><button type="button" class="btn btn-success navbar-btn">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</button></a>
+          <a href="{{ path('fos_user_security_login') }}"><button type="button" class="btn btn-default navbar-btn">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</button></a>
+          <a href="{{ path('fos_user_registration_register') }}"><button type="button" class="btn btn-success navbar-btn">{{ 'layout.register'|trans({}, 'FOSUserBundle') }}</button></a>
+
       {% endif %}
 
     </div>
